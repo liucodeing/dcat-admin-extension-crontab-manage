@@ -1,0 +1,35 @@
+{
+    "name": "dcat-admin/extension-crontab-manage",
+    "alias": "",
+    "description": "Description...",
+    "type": "library",
+    "keywords": [
+        "dcat-admin",
+        "extension"
+    ],
+    "homepage": "https://github.com/dcat-admin/crontab-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "your name",
+            "email": "your email"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\Extension\\Crontab\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Dcat\\Admin\\Extension\\Crontab\\CrontabExtensionServiceProvider",
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\Extension\\Crontab\\CrontabExtensionServiceProvider"
+            ]
+        }
+    }
+}
